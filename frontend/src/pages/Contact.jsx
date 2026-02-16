@@ -41,7 +41,7 @@ const Contact = () => {
                 <Phone size={28} className="text-green-600 group-hover:text-white transition-colors" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Phone 1</h3>
-              <p className="text-green-600 font-semibold">{storeInfo.phone}</p>
+              <p className="text-green-600 font-semibold text-sm">+91 {storeInfo.phone}</p>
               <p className="text-sm text-gray-500 mt-2">Click to call</p>
             </a>
 
@@ -53,7 +53,19 @@ const Contact = () => {
                 <Phone size={28} className="text-green-600 group-hover:text-white transition-colors" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Phone 2</h3>
-              <p className="text-green-600 font-semibold">{storeInfo.phone2}</p>
+              <p className="text-green-600 font-semibold text-sm">+91 {storeInfo.phone2}</p>
+              <p className="text-sm text-gray-500 mt-2">Click to call</p>
+            </a>
+
+            <a
+              href={`tel:${storeInfo.phone3}`}
+              className="bg-gradient-to-br from-green-50 to-white border-2 border-green-200 p-6 rounded-2xl hover:shadow-lg hover:border-green-400 transition-all text-center group"
+            >
+              <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-600 transition-colors">
+                <Phone size={28} className="text-green-600 group-hover:text-white transition-colors" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Phone 3</h3>
+              <p className="text-green-600 font-semibold text-sm">+91 {storeInfo.phone3}</p>
               <p className="text-sm text-gray-500 mt-2">Click to call</p>
             </a>
 
@@ -65,7 +77,7 @@ const Contact = () => {
                 <MessageCircle size={28} className="text-orange-600 group-hover:text-white transition-colors" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">WhatsApp</h3>
-              <p className="text-orange-600 font-semibold">{storeInfo.phone}</p>
+              <p className="text-orange-600 font-semibold text-sm">+91 {storeInfo.phone}</p>
               <p className="text-sm text-gray-500 mt-2">Send message</p>
             </button>
 
@@ -80,7 +92,9 @@ const Contact = () => {
               <p className="text-gray-600 font-semibold text-sm break-all">{storeInfo.email}</p>
               <p className="text-sm text-gray-500 mt-2">Send email</p>
             </a>
+          </div>
 
+          <div className="flex justify-center mt-6">
             <button
               onClick={handleGetDirections}
               className="bg-gradient-to-br from-green-50 to-white border-2 border-green-200 p-6 rounded-2xl hover:shadow-lg hover:border-green-400 transition-all text-center group"
@@ -88,9 +102,9 @@ const Contact = () => {
               <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-600 transition-colors">
                 <Navigation size={28} className="text-green-600 group-hover:text-white transition-colors" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Directions</h3>
-              <p className="text-green-600 font-semibold">Get Directions</p>
-              <p className="text-sm text-gray-500 mt-2">Open in Maps</p>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Get Directions</h3>
+              <p className="text-green-600 font-semibold">Open in Maps</p>
+              <p className="text-sm text-gray-500 mt-2">View location</p>
             </button>
           </div>
         </div>
