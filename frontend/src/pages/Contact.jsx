@@ -11,10 +11,7 @@ const Contact = () => {
   };
 
   const handleGetDirections = () => {
-    const address = encodeURIComponent(
-      `${storeInfo.address.line1}, ${storeInfo.address.line2}, ${storeInfo.address.city}, ${storeInfo.address.state} ${storeInfo.address.pincode}`
-    );
-    window.open(`https://www.google.com/maps/search/?api=1&query=${address}`, "_blank");
+    window.open(storeInfo.mapLink, "_blank");
   };
 
   return (
