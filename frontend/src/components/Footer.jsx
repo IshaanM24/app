@@ -62,6 +62,9 @@ const Footer = () => {
                   <a href={`tel:${storeInfo.phone2}`} className="text-sm hover:text-green-500 transition-colors">
                     +91 {storeInfo.phone2}
                   </a>
+                  <a href={`tel:${storeInfo.phone3}`} className="text-sm hover:text-green-500 transition-colors">
+                    +91 {storeInfo.phone3}
+                  </a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
