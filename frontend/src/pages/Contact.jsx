@@ -32,7 +32,7 @@ const Contact = () => {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
             <a
               href={`tel:${storeInfo.phone}`}
               className="bg-gradient-to-br from-green-50 to-white border-2 border-green-200 p-6 rounded-2xl hover:shadow-lg hover:border-green-400 transition-all text-center group"
@@ -40,8 +40,20 @@ const Contact = () => {
               <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-600 transition-colors">
                 <Phone size={28} className="text-green-600 group-hover:text-white transition-colors" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Phone</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Phone 1</h3>
               <p className="text-green-600 font-semibold">{storeInfo.phone}</p>
+              <p className="text-sm text-gray-500 mt-2">Click to call</p>
+            </a>
+
+            <a
+              href={`tel:${storeInfo.phone2}`}
+              className="bg-gradient-to-br from-green-50 to-white border-2 border-green-200 p-6 rounded-2xl hover:shadow-lg hover:border-green-400 transition-all text-center group"
+            >
+              <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-600 transition-colors">
+                <Phone size={28} className="text-green-600 group-hover:text-white transition-colors" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Phone 2</h3>
+              <p className="text-green-600 font-semibold">{storeInfo.phone2}</p>
               <p className="text-sm text-gray-500 mt-2">Click to call</p>
             </a>
 
