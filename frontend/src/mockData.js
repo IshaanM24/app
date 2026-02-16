@@ -54,8 +54,8 @@ export const usps = [
   },
   {
     id: 4,
-    title: "Nominal Delivery Charge",
-    description: "Low delivery fee, free above minimum order",
+    title: "No Delivery Charges",
+    description: "Free delivery on minimum order value",
     icon: "IndianRupee",
   },
 ];
