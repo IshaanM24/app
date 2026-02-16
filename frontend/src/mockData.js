@@ -83,8 +83,9 @@ export const howItWorks = [
 
 export const storeInfo = {
   name: "J K Chems",
-  phone: "9425412118",
-  email: "jkchems@example.com",
+  phone: "8770323650",
+  phone2: "8461829294",
+  email: "aniljaggi52@gmail.com",
   address: {
     line1: "Nehru Railway Colony, Katanga",
     line2: "Gorakhpur Main Road",
@@ -95,6 +96,7 @@ export const storeInfo = {
   location: "Gorakhpur, Jabalpur",
   rating: 4.5,
   yearStarted: 2018,
+  mapLink: "https://maps.app.goo.gl/nbDzvB43rsWFp1zE9",
   mapCoordinates: {
     lat: 23.1815,
     lng: 79.9864,
