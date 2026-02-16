@@ -15,26 +15,20 @@ export const categories = [
   },
   {
     id: 3,
-    title: "Vegetables & Fruits",
-    description: "Farm-fresh seasonal vegetables and fruits delivered daily for maximum freshness.",
-    icon: "Apple",
-  },
-  {
-    id: 4,
     title: "Spices & Masalas",
     description: "Authentic Indian spices, masalas, and condiments to add flavor to your cooking.",
     icon: "Flame",
   },
   {
-    id: 5,
+    id: 4,
     title: "Dry Fruits & Snacks",
     description: "Premium quality dry fruits, nuts, and packaged snacks for healthy munching.",
     icon: "Nut",
   },
   {
-    id: 6,
+    id: 5,
     title: "Frozen Food & Ice",
-    description: "Frozen vegetables, ready-to-eat meals, ice cubes, and ice cream varieties.",
+    description: "Frozen vegetables, ready-to-eat meals, and ice cubes for your convenience.",
     icon: "Snowflake",
   },
 ];
