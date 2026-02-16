@@ -85,6 +85,7 @@ export const storeInfo = {
   name: "J K Chems",
   phone: "8770323650",
   phone2: "8461829294",
+  phone3: "9425412118",
   email: "aniljaggi52@gmail.com",
   address: {
     line1: "Nehru Railway Colony, Katanga",
@@ -97,6 +98,7 @@ export const storeInfo = {
   rating: 4.5,
   yearStarted: 2018,
   mapLink: "https://maps.app.goo.gl/nbDzvB43rsWFp1zE9",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.516908237673!2d79.98426387532408!3d23.18107507908825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981aecb2e5a8c93%3A0x68a7a2b8f8f8f8f8!2sNehru%20Railway%20Colony%2C%20Katanga%2C%20Jabalpur%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1708077894735!5m2!1sen!2sin",
   mapCoordinates: {
     lat: 23.1815,
     lng: 79.9864,
