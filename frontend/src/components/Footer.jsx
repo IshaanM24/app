@@ -42,11 +42,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/bulk-orders" className="text-sm hover:text-green-500 transition-colors">
-                  Bulk Orders
-                </Link>
-              </li>
-              <li>
                 <Link to="/contact" className="text-sm hover:text-green-500 transition-colors">
                   Contact
                 </Link>
