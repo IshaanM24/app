@@ -60,13 +60,18 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <Phone size={16} className="text-green-500 mt-1 flex-shrink-0" />
-                <a href={`tel:${storeInfo.phone}`} className="text-sm hover:text-green-500 transition-colors">
-                  {storeInfo.phone}
-                </a>
+                <div className="flex flex-col gap-1">
+                  <a href={`tel:${storeInfo.phone}`} className="text-sm hover:text-green-500 transition-colors">
+                    +91 {storeInfo.phone}
+                  </a>
+                  <a href={`tel:${storeInfo.phone2}`} className="text-sm hover:text-green-500 transition-colors">
+                    +91 {storeInfo.phone2}
+                  </a>
+                </div>
               </li>
               <li className="flex items-start gap-3">
                 <Mail size={16} className="text-green-500 mt-1 flex-shrink-0" />
-                <a href={`mailto:${storeInfo.email}`} className="text-sm hover:text-green-500 transition-colors">
+                <a href={`mailto:${storeInfo.email}`} className="text-sm hover:text-green-500 transition-colors break-all">
                   {storeInfo.email}
                 </a>
               </li>
