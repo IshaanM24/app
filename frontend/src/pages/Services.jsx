@@ -8,6 +8,8 @@ import {
   MessageCircle,
   Copy,
   Check,
+  Heart,
+  Activity,
 } from "lucide-react";
 import { categories, storeInfo } from "../mockData";
 import { Toaster } from "../components/ui/sonner";
@@ -23,6 +25,8 @@ const Services = () => {
     Flame: Flame,
     Nut: ShoppingBasket,
     Snowflake: Snowflake,
+    Heart: Heart,
+    Activity: Activity,
   };
 
   const handleWhatsAppClick = (categoryTitle) => {
