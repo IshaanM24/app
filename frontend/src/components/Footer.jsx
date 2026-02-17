@@ -18,7 +18,7 @@ const Footer = () => {
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
               Your trusted neighborhood grocery partner since {storeInfo.yearStarted}. 
-              Delivering fresh groceries with reliability and care across {storeInfo.location}.
+              {storeInfo.serviceArea}.
             </p>
           </div>
 
