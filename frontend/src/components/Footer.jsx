@@ -96,10 +96,12 @@ const Footer = () => {
             <div className="flex items-start gap-3 mb-4">
               <Clock size={16} className="text-green-500 mt-1 flex-shrink-0" />
               <div className="text-sm">
-                <p className="font-medium text-white">Thursday - Tuesday</p>
-                <p className="text-gray-400">10:00 AM - 10:00 PM</p>
+                <p className="font-medium text-white">Monday - Tuesday</p>
+                <p className="text-gray-400">10:30 AM - 10:00 PM</p>
                 <p className="font-medium text-white mt-2">Wednesday</p>
-                <p className="text-gray-400">Closed</p>
+                <p className="text-red-400">Closed</p>
+                <p className="font-medium text-white mt-2">Thursday - Sunday</p>
+                <p className="text-gray-400">10:30 AM - 10:00 PM</p>
               </div>
             </div>
           </div>
