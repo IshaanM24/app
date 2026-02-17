@@ -98,6 +98,8 @@ export const storeInfo = {
   phone: "8770323650",
   phone2: "8461829294",
   phone3: "9425412118",
+  landline1: "0761 2400495",
+  landline2: "0761 4074272",
   email: "aniljaggi52@gmail.com",
   address: {
     line1: "Nehru Railway Colony, Katanga",
@@ -107,6 +109,7 @@ export const storeInfo = {
     pincode: "482001",
   },
   location: "Gorakhpur, Jabalpur",
+  serviceArea: "Serving all near by areas from gorakhpur",
   rating: 4.5,
   yearStarted: 2018,
   mapLink: "https://www.google.com/maps/place/J+K+Chems/@23.1519049,79.932537,17z/data=!3m1!4b1!4m6!3m5!1s0x3981ade233a1c95f:0x68b2bea406a8328f!8m2!3d23.1519!4d79.9351119!16s%2Fg%2F119tzrtqh?entry=ttu&g_ep=EgoyMDI2MDIxMS4wIKXMDSoASAFQAw%3D%3D",
