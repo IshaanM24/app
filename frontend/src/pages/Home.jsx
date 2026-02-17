@@ -170,31 +170,34 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {categories.slice(0, 6).map((category) => (
-              <div
-                key={category.id}
-                className="bg-gradient-to-br from-white to-gray-50 border border-gray-200 p-6 rounded-2xl hover:shadow-lg transition-all group"
-              >
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center group-hover:bg-green-600 transition-colors">
-                    <ShoppingBasket size={24} className="text-green-600 group-hover:text-white transition-colors" />
-                  </div>
-                  <h3 className="text-lg font-bold text-gray-900">
-                    {category.title}
-                  </h3>
-                </div>
-                <p className="text-sm text-gray-600 mb-4">
-                  {category.description}
-                </p>
-                <button
-                  onClick={handleWhatsAppClick}
-                  className="text-green-600 font-medium text-sm hover:text-green-700 flex items-center gap-2 group"
+            {categories.slice(0, 6).map((category) => {
+              const Icon = iconMap[category.icon] || ShoppingBasket;
+              return (
+                <div
+                  key={category.id}
+                  className="bg-gradient-to-br from-white to-gray-50 border border-gray-200 p-6 rounded-2xl hover:shadow-lg transition-all group"
                 >
-                  Order on WhatsApp
-                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                </button>
-              </div>
-            ))}
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center group-hover:bg-green-600 transition-colors">
+                      <Icon size={24} className="text-green-600 group-hover:text-white transition-colors" />
+                    </div>
+                    <h3 className="text-lg font-bold text-gray-900">
+                      {category.title}
+                    </h3>
+                  </div>
+                  <p className="text-sm text-gray-600 mb-4">
+                    {category.description}
+                  </p>
+                  <button
+                    onClick={handleWhatsAppClick}
+                    className="text-green-600 font-medium text-sm hover:text-green-700 flex items-center gap-2 group"
+                  >
+                    Order on WhatsApp
+                    <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              );
+            })}
           </div>
 
           <div className="text-center mt-10">
