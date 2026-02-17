@@ -15,18 +15,30 @@ export const categories = [
   },
   {
     id: 3,
+    title: "Health Foods",
+    description: "Nutritious health foods including quinoa, chia seeds, flax seeds, oats, and wholesome organic products for a healthier lifestyle.",
+    icon: "Heart",
+  },
+  {
+    id: 4,
+    title: "Diabetes Friendly Foods",
+    description: "Special diabetic-friendly products including millets, sugar-free items, protein bars, low-GI foods, and health supplements.",
+    icon: "Activity",
+  },
+  {
+    id: 5,
     title: "Spices & Masalas",
     description: "Authentic Indian spices, masalas, and condiments to add flavor to your cooking.",
     icon: "Flame",
   },
   {
-    id: 4,
+    id: 6,
     title: "Dry Fruits & Snacks",
     description: "Premium quality dry fruits, nuts, and packaged snacks for healthy munching.",
     icon: "Nut",
   },
   {
-    id: 5,
+    id: 7,
     title: "Frozen Food & Ice",
     description: "Frozen vegetables, ready-to-eat meals, and ice cubes for your convenience.",
     icon: "Snowflake",
