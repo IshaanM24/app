@@ -11,14 +11,19 @@ import {
   CheckCircle,
   Package,
   MessageSquare,
-  ArrowRight
+  ArrowRight,
+  Milk,
+  Flame,
+  Snowflake,
+  Heart,
+  Activity,
 } from "lucide-react";
 import { storeInfo, usps, howItWorks, categories, testimonials } from "../mockData";
 
 const Home = () => {
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent(
-      `Hello J K Chems! I would like to order groceries from ${storeInfo.location}.`
+      `Hello J K Chems! I would like to order groceries from ${storeInfo.serviceArea}.`
     );
     window.open(`https://wa.me/91${storeInfo.phone}?text=${message}`, "_blank");
   };
@@ -31,6 +36,13 @@ const Home = () => {
     MessageSquare: MessageSquare,
     CheckCircle: CheckCircle,
     Package: Package,
+    ShoppingBasket: ShoppingBasket,
+    Milk: Milk,
+    Flame: Flame,
+    Nut: ShoppingBasket,
+    Snowflake: Snowflake,
+    Heart: Heart,
+    Activity: Activity,
   };
 
   return (
