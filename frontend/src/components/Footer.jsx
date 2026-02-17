@@ -56,6 +56,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <Phone size={16} className="text-green-500 mt-1 flex-shrink-0" />
                 <div className="flex flex-col gap-1">
+                  <p className="text-xs text-gray-400 mb-1">Mobile Numbers:</p>
                   <a href={`tel:${storeInfo.phone}`} className="text-sm hover:text-green-500 transition-colors">
                     +91 {storeInfo.phone}
                   </a>
@@ -64,6 +65,13 @@ const Footer = () => {
                   </a>
                   <a href={`tel:${storeInfo.phone3}`} className="text-sm hover:text-green-500 transition-colors">
                     +91 {storeInfo.phone3}
+                  </a>
+                  <p className="text-xs text-gray-400 mt-2 mb-1">Landline:</p>
+                  <a href={`tel:${storeInfo.landline1.replace(/\s/g, '')}`} className="text-sm hover:text-green-500 transition-colors">
+                    {storeInfo.landline1}
+                  </a>
+                  <a href={`tel:${storeInfo.landline2.replace(/\s/g, '')}`} className="text-sm hover:text-green-500 transition-colors">
+                    {storeInfo.landline2}
                   </a>
                 </div>
               </li>
