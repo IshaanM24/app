@@ -32,7 +32,8 @@ const Contact = () => {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Mobile Numbers</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto mb-8">
             <a
               href={`tel:${storeInfo.phone}`}
               className="bg-gradient-to-br from-green-50 to-white border-2 border-green-200 p-6 rounded-2xl hover:shadow-lg hover:border-green-400 transition-all text-center group"
@@ -40,7 +41,7 @@ const Contact = () => {
               <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-600 transition-colors">
                 <Phone size={28} className="text-green-600 group-hover:text-white transition-colors" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Phone 1</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Mobile 1</h3>
               <p className="text-green-600 font-semibold text-sm">+91 {storeInfo.phone}</p>
               <p className="text-sm text-gray-500 mt-2">Click to call</p>
             </a>
@@ -52,7 +53,7 @@ const Contact = () => {
               <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-600 transition-colors">
                 <Phone size={28} className="text-green-600 group-hover:text-white transition-colors" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Phone 2</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Mobile 2</h3>
               <p className="text-green-600 font-semibold text-sm">+91 {storeInfo.phone2}</p>
               <p className="text-sm text-gray-500 mt-2">Click to call</p>
             </a>
@@ -64,7 +65,7 @@ const Contact = () => {
               <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-600 transition-colors">
                 <Phone size={28} className="text-green-600 group-hover:text-white transition-colors" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Phone 3</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Mobile 3</h3>
               <p className="text-green-600 font-semibold text-sm">+91 {storeInfo.phone3}</p>
               <p className="text-sm text-gray-500 mt-2">Click to call</p>
             </a>
@@ -94,7 +95,34 @@ const Contact = () => {
             </a>
           </div>
 
-          <div className="flex justify-center mt-6">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Landline Numbers</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-8">
+            <a
+              href={`tel:${storeInfo.landline1.replace(/\s/g, '')}`}
+              className="bg-gradient-to-br from-blue-50 to-white border-2 border-blue-200 p-6 rounded-2xl hover:shadow-lg hover:border-blue-400 transition-all text-center group"
+            >
+              <div className="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-600 transition-colors">
+                <Phone size={28} className="text-blue-600 group-hover:text-white transition-colors" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Landline 1</h3>
+              <p className="text-blue-600 font-semibold">{storeInfo.landline1}</p>
+              <p className="text-sm text-gray-500 mt-2">Click to call</p>
+            </a>
+
+            <a
+              href={`tel:${storeInfo.landline2.replace(/\s/g, '')}`}
+              className="bg-gradient-to-br from-blue-50 to-white border-2 border-blue-200 p-6 rounded-2xl hover:shadow-lg hover:border-blue-400 transition-all text-center group"
+            >
+              <div className="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-600 transition-colors">
+                <Phone size={28} className="text-blue-600 group-hover:text-white transition-colors" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Landline 2</h3>
+              <p className="text-blue-600 font-semibold">{storeInfo.landline2}</p>
+              <p className="text-sm text-gray-500 mt-2">Click to call</p>
+            </a>
+          </div>
+
+          <div className="flex justify-center">
             <button
               onClick={handleGetDirections}
               className="bg-gradient-to-br from-green-50 to-white border-2 border-green-200 p-6 rounded-2xl hover:shadow-lg hover:border-green-400 transition-all text-center group"
